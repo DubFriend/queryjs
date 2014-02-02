@@ -1,0 +1,31 @@
+{
+  "name": "queryjs",
+  "version": "0.0.0",
+  "description": "easy url query parameter manipulation",
+  "main": "query.js",
+  "scripts": {
+    "test": "nodeunit test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DubFriend/queryjs"
+  },
+  "keywords": [
+    "url",
+    "query",
+    "parameter",
+    "functional",
+    "add",
+    "remove"
+  ],
+  "author": "Brian Detering <BDeterin@gmail.com> (http://www.briandetering.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DubFriend/queryjs/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
