@@ -23,5 +23,55 @@ module.exports = {
             { a: 'foo', b: 'bar' }
         );
         test.done();
+    },
+
+    setBasic: function (test) {
+        test.deepEqual(
+            queryjs.set('url?a=foo&b=bar', { c: 'baz' }),
+            'url?a=foo&b=bar&c=baz'
+        );
+        test.done();
+    },
+
+    setOverwrite: function (test) {
+        test.deepEqual(
+            queryjs.set('url?a=foo&b=bar', { b: 'baz' }),
+            'url?a=foo&b=baz'
+        );
+        test.done();
+    },
+
+    setNoQueryParameter: function (test) {
+        test.deepEqual(
+            queryjs.set('url', { a: 'foo', b: 'baz' }),
+            'url?a=foo&b=baz'
+        );
+
+        test.deepEqual(
+            queryjs.set('url?', { a: 'foo', b: 'baz' }),
+            'url?a=foo&b=baz'
+        );
+        test.done();
+    },
+
+    setNoQueryParameterWithHash: function (test) {
+        test.deepEqual(
+            queryjs.set('url#hash', { a: 'foo', b: 'baz' }),
+            'url?a=foo&b=baz#hash'
+        );
+
+        test.deepEqual(
+            queryjs.set('url?#hash', { a: 'foo', b: 'baz' }),
+            'url?a=foo&b=baz#hash'
+        );
+        test.done();
+    },
+
+    setWithHash: function (test) {
+        test.deepEqual(
+            queryjs.set('url?a=yo#hash', { a: 'foo', b: 'baz' }),
+            'url?a=foo&b=baz#hash'
+        );
+        test.done();
     }
 };

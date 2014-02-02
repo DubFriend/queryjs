@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                 files: ['**/*.js'],
                 tasks: ['nodeunit'],
                 options: {
-                    spawn: false,
+                    spawn: true,
                 }
             }
         }
@@ -21,5 +21,4 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-contrib-watch');
-
 };
