@@ -4,7 +4,7 @@ easy url query parameter manipulation
 
 available in the browser and in nodejs
 - `npm install queryjs`
-- `bower install queryjs`
+- `bower install dubfriend-queryjs`
 
 ##queryjs.set(parameterObject)
 ```js
