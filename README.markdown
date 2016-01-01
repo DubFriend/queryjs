@@ -1,9 +1,10 @@
-#queryjs
+# queryjs
 
 easy url query parameter manipulation
 
 available in the browser and in nodejs
-`npm install queryjs`
+- `npm install queryjs`
+- `bower install queryjs`
 
 ##queryjs.set(parameterObject)
 ```js
@@ -21,3 +22,4 @@ var parameters = queryjs.get('url.com?a=foo');
 ```
 
 works with url hashes.  (todo: support query parameter arrays)
+

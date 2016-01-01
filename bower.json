@@ -1,0 +1,25 @@
+{
+  "name": "queryjs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/DubFriend/queryjs",
+  "description": "easy url query parameter manipulation",
+  "main": "query.js",
+  "keywords": [
+    "querystring",
+    "query",
+    "browser",
+    "node",
+    "bower"
+  ],
+  "authors": [
+    "Brian Detering"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
